@@ -1,2 +1,2 @@
 # oozie-hive
-List of oozie examples.
+Repository of oozie action examples.

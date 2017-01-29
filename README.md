@@ -1,4 +1,4 @@
-# oozie
+# oozie-examples
 
 To run hive action
 

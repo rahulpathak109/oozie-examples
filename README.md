@@ -1,8 +1,6 @@
 # oozie-examples
 
-To run hive action
-
-Replace below values in job.properties as per your cluster.
+To run hive action replace below values in job.properties as per your cluster.
 
 \<hdfs-site/dfs.namenode.rpc-address> with value of dfs.namenode.rpc-address in /etc/hadoop/conf/hdfs-site.xml. In case of Namenode HA use value of dfs.internal.nameservices
 

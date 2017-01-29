@@ -6,7 +6,9 @@ To run hive action replace below values in job.properties as per your cluster.
 
 \<yarn-site/yarn.resourcemanager.address> with value of yarn.resourcemanager.address in /etc/hadoop/conf/yarn-site.xml.
 
-Modify script.hql to replace \<table_name> with some existing table.
+Modify script.hql to replace \<table_name> with some existing table. You can add multiple queries.
+
+Replcace hive-site.xml with /etc/hive/conf/hive-site.xml
 
 Copy hive-action directory to hdfs:
 

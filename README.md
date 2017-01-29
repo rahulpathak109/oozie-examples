@@ -2,7 +2,7 @@
 
 To run hive action replace below values in job.properties as per your cluster.
 
-\<hdfs-site/dfs.namenode.rpc-address> with value of dfs.namenode.rpc-address in /etc/hadoop/conf/hdfs-site.xml. In case of Namenode HA use value of dfs.internal.nameservices
+\<hdfs-site/dfs.namenode.rpc-address> with value of dfs.namenode.rpc-address in /etc/hadoop/conf/hdfs-site.xml. In case of Namenode HA use value of dfs.internal.nameservices. Do not add port in case of using nameservice.
 
 \<yarn-site/yarn.resourcemanager.address> with value of yarn.resourcemanager.address in /etc/hadoop/conf/yarn-site.xml.
 

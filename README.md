@@ -10,8 +10,8 @@ Replcace hive-site.xml with your cluster's hive-site ususally present at /etc/hi
 
 Copy examples directory to hdfs:
 
-hdfs dfs -put examples .
+```hdfs dfs -put examples .```
 
 Run using below command:
 
-oozie job -oozie http://<oozie-host>:<oozie-port>/oozie/ -config <local path of job.properties> -run 
+```oozie job -oozie http://<oozie-host>:<oozie-port>/oozie/ -config <local path of job.properties> -run```

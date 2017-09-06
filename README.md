@@ -1,14 +1,8 @@
-# oozie-examples
+This repository is copy of oozie-examples.tar.gz present with standard Hortonworks installation of oozie. Usually located at /usr/hdp/current/oozie-server/doc/oozie-examples.tar.gz
 
-To run hive action replace below values in job.properties as per your cluster.
+Modify job.properties files as instructed in the file itself.
 
-\<hdfs-site/dfs.namenode.rpc-address> with value of dfs.namenode.rpc-address in /etc/hadoop/conf/hdfs-site.xml. In case of Namenode HA use value of dfs.internal.nameservices. Do not add port in case of using nameservice.
-
-\<yarn-site/yarn.resourcemanager.address> with value of yarn.resourcemanager.address in /etc/hadoop/conf/yarn-site.xml.
-
-Modify script.hql to replace \<table_name> with some existing table. You can add multiple queries.
-
-Replcace hive-site.xml with /etc/hive/conf/hive-site.xml
+Replcace hive-site.xml with your cluster's hive-site ususally present at /etc/hive/conf/hive-site.xml
 
 Copy hive-action directory to hdfs:
 
@@ -16,6 +10,5 @@ hdfs dfs -put hive-action
 
 Run using below command:
 
-oozie job -oozie http://\<oozie-host>:\<oozie-port>/oozie/ -config hive-action/job.properties -run 
+oozie job -oozie http://<oozie-host>:<oozie-port>/oozie/ -config <local path of job.properties> -run 
 
-Here hive-action is referring to local hive-action directory.
